@@ -1,0 +1,8 @@
+---
+- name: Configuration_Managment_for_Centos_Servers
+  hosts: all
+  become: true
+  roles:
+    - resources
+    - linuxPkgs
+    - JdkInstall

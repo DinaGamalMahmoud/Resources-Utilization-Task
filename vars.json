@@ -1,0 +1,4 @@
+{ 
+    "linux_packages": ["openssh", "sqlite" ,"vim"]
+
+}

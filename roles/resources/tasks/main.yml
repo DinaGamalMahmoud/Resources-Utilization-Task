@@ -1,0 +1,17 @@
+---
+- name: Copy Python script
+  copy:
+   src: resources.py
+   dest: /opt/resources.py
+   mode: u=rxw,g=rxw,o=r
+
+- name: schdule Python Script
+  cron:
+   name: "Resources Utlization"
+   minute: "*/2"
+   hour: "*"
+   day: "*"
+   month: "*"
+   weekday: "*"
+   job: /opt/resources.py
+
