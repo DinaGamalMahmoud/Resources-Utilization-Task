@@ -8,7 +8,7 @@
 - name: schdule Python Script
   cron:
    name: "Resources Utlization"
-   minute: "*/2"
+   minute: "*/15"
    hour: "*"
    day: "*"
    month: "*"
